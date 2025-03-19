@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "ms-python.python",
+        "ms-python.debugpy",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "charliermarsh.ruff",
+        "EditorConfig.EditorConfig",
+        "streetsidesoftware.code-spell-checker",
+        "Codeium.codeium",
+        "tamasfe.even-better-toml",
+        "ms-vscode-remote.remote-ssh"
+    ]
+}

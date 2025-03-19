@@ -1,0 +1,15 @@
+# order of defaults determines the order in which configs override each other
+defaults:
+  - _self_
+  - hydra: default
+  - data: mnist
+  - loggers: default
+  - trainer: default
+  - callbacks: default
+  - model: mnist
+# task name, determines output directory path
+task_name: "test"
+# passing checkpoint path is necessary for evaluation
+checkpoint: ${hydra:runtime.cwd}/models/last.ckpt
+# seed for random number generators in pytorch, numpy and python.random
+seed: 1234

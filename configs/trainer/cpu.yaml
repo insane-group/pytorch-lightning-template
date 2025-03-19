@@ -1,0 +1,5 @@
+defaults:
+  - _self_
+  - default
+accelerator: cpu
+devices: 1
