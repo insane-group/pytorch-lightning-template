@@ -1,0 +1,22 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: pytorch-lightning-template
+message: 'If you use this software, please cite it as below.'
+type: software
+authors:
+  - given-names: Vassilis
+    family-names: Sioros
+    email: v.sioros@iit.demokritos.gr
+    affiliation: NCSR “Demokritos”
+    orcid: 'https://orcid.org/0000-0002-6266-0755'
+repository-code: 'https://github.com/insane-group/pytorch-lightning-template'
+url: 'https://insane-group.github.io/pytorch-lightning-template/'
+abstract: Generic template to bootstrap your PyTorch project
+keywords:
+  - template
+  - pytorch
+  - hydra
+  - pytorch-lightning
+license: Apache-2.0

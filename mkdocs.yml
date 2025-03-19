@@ -1,0 +1,124 @@
+site_name: Pytorch Lightning Template
+site_description: "Generic template to bootstrap your PyTorch project"
+site_url: "https://insane-group.github.io/pytorch-lightning-template"
+repo_url: "https://github.com/insane-group/pytorch-lightning-template"
+edit_uri: "edit/master/docs/"
+repo_name: "insane-group/pytorch-lightning-template"
+copyright: |
+  Copyright &copy; 2024 <a href="https://github.com/orgs/insane-group" target="_blank" rel="noopener">INSANE Group</a>
+nav:
+  - Overview: index.md
+  - Getting Started:
+      - Welcome to MkDocs: welcome.md
+  - Code Reference:
+      - Model: code/models/mnist.md
+  - Contributing:
+      - Contributing Guidelines: CONTRIBUTING.md
+      - Code Of Conduct: CODE_OF_CONDUCT.md
+      - License: LICENSE.md
+theme:
+  name: material
+  features:
+    - search.suggest
+    - content.code.annotate
+    - content.tabs.link
+    - content.tooltips
+    - header.autohide
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.instant
+    - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/lightbulb-auto
+        name: Switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+plugins:
+  - search
+  - social
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          paths:
+            - src
+          options:
+            docstring_style: google
+            docstring_options:
+              ignore_init_summary: yes
+            merge_init_into_class: yes
+            show_submodules: no
+            show_root_toc_entry: no
+            show_symbol_type_toc: true
+            show_symbol_type_heading: true
+            show_signature_annotations: true
+            signature_crossrefs: true
+            separate_signature: true
+            show_source: true
+            modernize_annotations: true
+            summary: true
+  - minify:
+      minify_html: true
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.magiclink
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist
+  - toc:
+      permalink: ¤
+  - mdx_truly_sane_lists
+watch:
+  - src
+  - docs
+  - README.md
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/insane-group
+    - icon: fontawesome/solid/envelope
+      link: mailto:insane@iit.demokritos.gr
+    - icon: fontawesome/solid/globe
+      link: https://insane.iit.demokritos.gr
+  version:
+    provider: mike
+extra_css:
+  - css/mkdocsoad.css

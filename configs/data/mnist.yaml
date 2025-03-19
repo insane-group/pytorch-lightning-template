@@ -1,0 +1,5 @@
+_target_: project.data.mnist.MNISTDataModule
+data_dir: ${hydra:runtime.cwd}/data/MNIST
+num_workers: 1
+pin_memory: True
+batch_size: 128 # Needs to be divisible by the number of devices (e.g., if in a distributed setup)
