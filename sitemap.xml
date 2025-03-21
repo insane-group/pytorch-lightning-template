@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://insane-group.github.io/pytorch-lightning-template/</loc>
-         <lastmod>2025-03-20</lastmod>
+         <lastmod>2025-03-21</lastmod>
     </url>
     <url>
          <loc>https://insane-group.github.io/pytorch-lightning-template/CODE_OF_CONDUCT/</loc>
-         <lastmod>2025-03-20</lastmod>
+         <lastmod>2025-03-21</lastmod>
     </url>
     <url>
          <loc>https://insane-group.github.io/pytorch-lightning-template/CONTRIBUTING/</loc>
-         <lastmod>2025-03-20</lastmod>
+         <lastmod>2025-03-21</lastmod>
     </url>
     <url>
          <loc>https://insane-group.github.io/pytorch-lightning-template/setting_up_a_dev_environment/</loc>
-         <lastmod>2025-03-20</lastmod>
+         <lastmod>2025-03-21</lastmod>
     </url>
     <url>
          <loc>https://insane-group.github.io/pytorch-lightning-template/why_pytorch_lightning/</loc>
-         <lastmod>2025-03-20</lastmod>
+         <lastmod>2025-03-21</lastmod>
     </url>
 </urlset>
