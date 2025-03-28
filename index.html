@@ -22,11 +22,13 @@ poe<span class=w> </span>hooks
 
 <span class=c1># Run the training/evaluation script</span>
 <span class=c1># Override any config parameter from command line</span>
-python<span class=w> </span>train.py<span class=w> </span>trainer.max_epochs<span class=o>=</span><span class=m>20</span><span class=w> </span>model.optimizer.lr<span class=o>=</span>1e-4
+python<span class=w> </span>src/project/train.py<span class=w> </span>trainer.max_epochs<span class=o>=</span><span class=m>20</span><span class=w> </span>model.optimizer.lr<span class=o>=</span>1e-4
 <span class=c1># train on CPU</span>
-python<span class=w> </span>train.py<span class=w> </span><span class=nv>trainer</span><span class=o>=</span>cpu
+python<span class=w> </span>src/project/train.py<span class=w> </span><span class=nv>trainer</span><span class=o>=</span>cpu
 <span class=c1># train on 1 GPU</span>
-python<span class=w> </span>train.py<span class=w> </span><span class=nv>trainer</span><span class=o>=</span>gpu
+python<span class=w> </span>src/project/train.py<span class=w> </span><span class=nv>trainer</span><span class=o>=</span>gpu
+<span class=c1># test checkpoint on test dataset</span>
+python<span class=w> </span>src/project/test.py<span class=w> </span><span class=nv>checkpoint</span><span class=o>=</span><span class=s2>&quot;/path/to/ckpt/name.ckpt&quot;</span>
 </code></pre></div> <h3 id=performing-tasks-using-poethepoet>Performing tasks using <code>poethepoet</code><a class=headerlink href=#performing-tasks-using-poethepoet title="Permanent link">¤</a></h3> <p>We are using <a href=https://github.com/nat-n/poethepoet>poethepoet</a>, to perform various development oriented tasks. Formatting, type-checking, as well as a few other operations, can be performed by running</p> <div class=highlight><pre><span></span><code>poe<span class=w> </span>&lt;task&gt;
 </code></pre></div> <div class="admonition tip"> <p class=admonition-title>Tip</p> </div> <div class=highlight><pre><span></span><code>Consider installing `poe` as global dependency to make your life easier using `rye install poethepoet` :stuck_out_tongue:.
 </code></pre></div> <p>where <code>&lt;task&gt;</code> is one of the tasks listed by running:</p> <div class=highlight><pre><span></span><code>poe<span class=w> </span>--help
