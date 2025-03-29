@@ -18,9 +18,10 @@ rye<span class=w> </span>sync
 <span class=nb>source</span><span class=w> </span>.venv/bin/activate
 
 <span class=c1># Install the pre-commit hooks</span>
-poe<span class=w> </span>hooks
+rye<span class=w> </span>run<span class=w> </span>pre-commit<span class=w> </span>install
 
-<span class=c1># Run the training/evaluation script</span>
+<span class=c1># Run the training/evaluation script (Run with --help to see all options)</span>
+<span class=c1># Example usage</span>
 <span class=c1># Override any config parameter from command line</span>
 python<span class=w> </span>src/project/train.py<span class=w> </span>trainer.max_epochs<span class=o>=</span><span class=m>20</span><span class=w> </span>model.optimizer.lr<span class=o>=</span>1e-4
 <span class=c1># train on CPU</span>
